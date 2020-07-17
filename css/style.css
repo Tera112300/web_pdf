@@ -1,0 +1,69 @@
+/* Scss Document */
+.container_st {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+
+#pdf_form .input-group {
+  margin-bottom: 18px;
+}
+
+.alert-hidden {
+  display: none;
+}
+
+.note-insert button:nth-child(2) {
+  border-radius: 3px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
+.note-insert button:last-child {
+  display: none !important;
+}
+
+.table {
+  width: 100% !important;
+}
+
+footer {
+  border-top: 1px solid #e7e7e7;
+  background: #f8f8f8;
+  padding: 8px 10px;
+}
+footer .copyright {
+  text-align: center;
+  font-size: 12px;
+  margin-bottom: 0;
+}
+
+.history_link {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container_st {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .note-color .dropdown-menu {
+    transform: translateX(-72%);
+  }
+}
+@media screen and (max-width: 480px) {
+  #detail + .note-editor .modal-body {
+    font-size: 13px;
+  }
+  #detail + .note-editor .modal-body label {
+    width: 130px !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .note-color .dropdown-menu {
+    transform: scale(0.8);
+    transform-origin: left top;
+  }
+}

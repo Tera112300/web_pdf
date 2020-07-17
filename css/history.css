@@ -1,0 +1,82 @@
+ul.cp_list {
+  padding: 0;
+  list-style: none;
+  font-size: 16px;
+}
+
+ul.cp_list li {
+  position: relative;
+}
+ul.cp_list li a {
+  display: block;
+  color: #337ab7;
+  text-decoration: none;
+  position: relative;
+  padding: 0.5em 2.2em 0.5em 2.3em;
+  word-wrap: break-word;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #337ab7;
+  transition: 0.6s ease-in-out opacity;
+}
+ul.cp_list li a::before, ul.cp_list li a::after {
+  content: "";
+  position: absolute;
+  transform: rotate(45deg);
+}
+ul.cp_list li a::before {
+  top: 0.7em;
+  left: 0.2em;
+  width: 12px;
+  height: 12px;
+  border: 2px solid #337ab7;
+  transition: 0.6s ease-in-out;
+}
+ul.cp_list li a::after {
+  top: 0.9em;
+  left: 0.7em;
+  width: 14px;
+  height: 14px;
+  background: rgba(51, 122, 183, 0.5);
+  transform: rotate(60deg);
+}
+ul.cp_list li a:hover {
+  opacity: 0.7;
+}
+ul.cp_list li a:hover::before {
+  background: #337ab7;
+}
+ul.cp_list li .close_cp {
+  color: #337ab7;
+  position: absolute;
+  right: 0;
+  top: 4px;
+  z-index: 9;
+  cursor: pointer;
+  transition: 0.6s;
+}
+ul.cp_list li .close_cp:hover {
+  transform: rotate(360deg);
+  opacity: 0.7;
+}
+
+.btn_wrap {
+  margin-bottom: 25px;
+}
+.btn_wrap > ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+.btn_wrap > ul li {
+  width: 49.5%;
+  float: left;
+  margin-right: 1%;
+}
+.btn_wrap > ul li a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+.btn_wrap > ul li:nth-child(2n) {
+  margin-right: 0;
+}
